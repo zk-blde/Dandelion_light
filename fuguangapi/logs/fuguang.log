@@ -402,3 +402,32 @@ INFO 2022-06-02 14:21:24,766 basehttp:161 "GET /test HTTP/1.1" 200 5115
 INFO 2022-06-02 14:21:24,925 basehttp:161 "GET /test HTTP/1.1" 200 5115
 INFO 2022-06-02 14:42:02,725 autoreload:637 Watching for file changes with StatReloader
 INFO 2022-06-02 14:42:45,429 basehttp:161 "GET /nav/header HTTP/1.1" 200 6000
+INFO 2022-06-02 15:12:39,220 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
+INFO 2022-06-02 15:12:39,876 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 15:14:57,494 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\urls.py changed, reloading.
+INFO 2022-06-02 15:14:58,117 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 15:15:31,660 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\apps\home\models.py changed, reloading.
+INFO 2022-06-02 15:15:32,295 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 15:16:23,717 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\apps\home\serializers.py changed, reloading.
+INFO 2022-06-02 15:16:24,361 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 15:17:35,401 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\apps\home\views.py changed, reloading.
+INFO 2022-06-02 15:17:36,045 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 15:18:30,212 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\constants.py changed, reloading.
+INFO 2022-06-02 15:18:30,823 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 15:19:31,472 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 15:19:59,567 basehttp:161 "GET /banner HTTP/1.1" 200 6663
+INFO 2022-06-02 15:19:59,588 basehttp:161 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2022-06-02 15:19:59,588 basehttp:161 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2022-06-02 15:19:59,588 basehttp:161 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2022-06-02 15:19:59,589 basehttp:161 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2022-06-02 15:19:59,591 basehttp:161 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2022-06-02 15:19:59,593 basehttp:161 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2022-06-02 15:19:59,594 basehttp:161 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2022-06-02 15:19:59,594 basehttp:161 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2022-06-02 15:19:59,595 basehttp:161 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2022-06-02 15:19:59,595 basehttp:161 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2022-06-02 15:19:59,597 basehttp:161 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2022-06-02 15:20:23,784 log:230 Not Found: /uploads/banner/2021/2.jpg
+WARNING 2022-06-02 15:20:23,784 basehttp:161 "GET /uploads/banner/2021/2.jpg HTTP/1.1" 404 2517
+INFO 2022-06-02 15:23:10,151 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
+INFO 2022-06-02 15:23:10,764 autoreload:637 Watching for file changes with StatReloader
