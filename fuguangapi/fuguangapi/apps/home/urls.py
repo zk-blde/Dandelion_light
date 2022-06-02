@@ -1,6 +1,6 @@
-from django.urls import path, re_path
+from django.urls import path,re_path
 from . import views
-
 urlpatterns = [
-    path("test", views.HomeAPIView.as_view()),
+    path("nav/header", views.NavHeaderAPIView.as_view()),
+    path("nav/footer", views.NavFooterAPIView.as_view()),
 ]

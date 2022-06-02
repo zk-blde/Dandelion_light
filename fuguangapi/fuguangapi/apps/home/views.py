@@ -1,20 +1,12 @@
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status
-from django_redis import get_redis_connection
-from django.views.decorators.cache import cache_page
-from django.utils.decorators import method_decorator
-class HomeAPIView(APIView):
-    # django提供的视图缓存，保存的位置就是default设置的redis0号库
-    @method_decorator(cache_page(5))
-    def get(self,request):
-        """测试"""
-        print("hello")
-        # 直接操作redis
-        redis = get_redis_connection("default")
-        brother = redis.lrange("brother",0,-1)
-        # django提供的缓存api操作
-        from django.core.cache import caches
-        sms_redis = caches["sms_code"]
-        sms_redis.set("sms_1331234546","12323",30)
-        return Response(brother, status.HTTP_200_OK)
+from rest_framework.generics import ListAPIView
+from .models import Nav
+from fuguangapi.settings import constants
+from .serializers import NavModelSerializer
+class NavHeaderAPIView(ListAPIView):
+    """头部导航"""
+    queryset = Nav.objects.filter(is_show=True,is_delete=False,position=0).order_by("orders","-id").all()[:constants.NAV_HEADER_LENGTH]
+    serializer_class = NavModelSerializer
+class NavFooterAPIView(ListAPIView):
+    """脚部导航"""
+    queryset = Nav.objects.filter(is_show=True,is_delete=False,position=1).order_by("orders","-id").all()[:constants.NAV_FOOTER_LENGTH]
+    serializer_class = NavModelSerializer
