@@ -431,3 +431,210 @@ WARNING 2022-06-02 15:20:23,784 log:230 Not Found: /uploads/banner/2021/2.jpg
 WARNING 2022-06-02 15:20:23,784 basehttp:161 "GET /uploads/banner/2021/2.jpg HTTP/1.1" 404 2517
 INFO 2022-06-02 15:23:10,151 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
 INFO 2022-06-02 15:23:10,764 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 16:07:31,023 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 16:11:46,996 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\apps\users\models.py changed, reloading.
+INFO 2022-06-02 16:11:47,646 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 16:13:02,779 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
+INFO 2022-06-02 16:13:03,503 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 16:33:35,846 autoreload:251 D:\Python3.8\Lib\site-packages\django\contrib\auth\migrations\0001_initial.py changed, reloading.
+INFO 2022-06-02 16:33:36,457 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 16:39:19,629 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
+INFO 2022-06-02 16:39:20,352 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 16:40:42,859 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
+INFO 2022-06-02 16:40:43,499 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 16:43:29,962 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\apps\users\urls.py changed, reloading.
+INFO 2022-06-02 16:43:30,592 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 16:43:38,973 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 17:27:31,925 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 17:47:02,369 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
+INFO 2022-06-02 17:47:03,357 autoreload:637 Watching for file changes with StatReloader
+WARNING 2022-06-02 17:48:38,331 log:230 Not Found: /user/login
+WARNING 2022-06-02 17:48:38,332 basehttp:161 "POST /user/login?username=root HTTP/1.1" 404 2825
+WARNING 2022-06-02 17:49:00,640 log:230 Not Found: /user/login
+WARNING 2022-06-02 17:49:00,641 basehttp:161 "POST /user/login HTTP/1.1" 404 2811
+WARNING 2022-06-02 17:51:11,122 log:230 Not Found: /user/login
+WARNING 2022-06-02 17:51:11,122 basehttp:161 "POST /user/login HTTP/1.1" 404 2811
+INFO 2022-06-02 18:03:05,261 autoreload:637 Watching for file changes with StatReloader
+WARNING 2022-06-02 18:03:36,410 log:230 Bad Request: /users/login
+WARNING 2022-06-02 18:03:36,410 basehttp:161 "POST /users/login HTTP/1.1" 400 79
+WARNING 2022-06-02 18:04:04,101 log:230 Bad Request: /users/login
+WARNING 2022-06-02 18:04:04,102 basehttp:161 "POST /users/login HTTP/1.1" 400 68
+WARNING 2022-06-02 18:06:55,531 log:230 Not Found: /users/authorizations
+WARNING 2022-06-02 18:06:55,531 basehttp:161 "POST /users/authorizations HTTP/1.1" 404 2893
+WARNING 2022-06-02 18:06:56,939 log:230 Not Found: /users/authorizations
+WARNING 2022-06-02 18:06:56,939 basehttp:161 "POST /users/authorizations HTTP/1.1" 404 2893
+INFO 2022-06-02 18:14:22,387 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
+INFO 2022-06-02 18:14:23,058 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 18:30:40,068 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\apps\users\urls.py changed, reloading.
+INFO 2022-06-02 18:30:40,673 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 18:30:58,650 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\apps\users\urls.py changed, reloading.
+INFO 2022-06-02 18:30:59,288 autoreload:637 Watching for file changes with StatReloader
+WARNING 2022-06-02 18:31:48,032 log:230 Not Found: /users/authorizations
+WARNING 2022-06-02 18:31:48,032 basehttp:161 "POST /users/authorizations HTTP/1.1" 404 2893
+ERROR 2022-06-02 18:32:00,458 log:230 Internal Server Error: /users/login
+Traceback (most recent call last):
+  File "D:\Python3.8\lib\site-packages\django\utils\module_loading.py", line 20, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'fuguangapi.utils.authenticate' has no attribute 'CustomAuthBackend'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Python3.8\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python3.8\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python3.8\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\Python3.8\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python3.8\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Python3.8\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Python3.8\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Python3.8\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\apps\users\views.py", line 9, in post
+    return super().post(request, *args, **kwargs)
+  File "D:\Python3.8\lib\site-packages\rest_framework_jwt\views.py", line 57, in post
+    if serializer.is_valid():
+  File "D:\Python3.8\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "D:\Python3.8\lib\site-packages\rest_framework\serializers.py", line 429, in run_validation
+    value = self.validate(value)
+  File "D:\Python3.8\lib\site-packages\rest_framework_jwt\serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "D:\Python3.8\lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "D:\Python3.8\lib\site-packages\django\contrib\auth\__init__.py", line 68, in authenticate
+    for backend, backend_path in _get_backends(return_tuples=True):
+  File "D:\Python3.8\lib\site-packages\django\contrib\auth\__init__.py", line 27, in _get_backends
+    backend = load_backend(backend_path)
+  File "D:\Python3.8\lib\site-packages\django\contrib\auth\__init__.py", line 21, in load_backend
+    return import_string(path)()
+  File "D:\Python3.8\lib\site-packages\django\utils\module_loading.py", line 24, in import_string
+    ) from err
+ImportError: Module "fuguangapi.utils.authenticate" does not define a "CustomAuthBackend" attribute/class
+ERROR 2022-06-02 18:32:00,461 basehttp:161 "POST /users/login HTTP/1.1" 500 136526
+ERROR 2022-06-02 18:32:02,387 log:230 Internal Server Error: /users/login
+Traceback (most recent call last):
+  File "D:\Python3.8\lib\site-packages\django\utils\module_loading.py", line 20, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'fuguangapi.utils.authenticate' has no attribute 'CustomAuthBackend'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Python3.8\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python3.8\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python3.8\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\Python3.8\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python3.8\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Python3.8\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Python3.8\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Python3.8\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\apps\users\views.py", line 9, in post
+    return super().post(request, *args, **kwargs)
+  File "D:\Python3.8\lib\site-packages\rest_framework_jwt\views.py", line 57, in post
+    if serializer.is_valid():
+  File "D:\Python3.8\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "D:\Python3.8\lib\site-packages\rest_framework\serializers.py", line 429, in run_validation
+    value = self.validate(value)
+  File "D:\Python3.8\lib\site-packages\rest_framework_jwt\serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "D:\Python3.8\lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "D:\Python3.8\lib\site-packages\django\contrib\auth\__init__.py", line 68, in authenticate
+    for backend, backend_path in _get_backends(return_tuples=True):
+  File "D:\Python3.8\lib\site-packages\django\contrib\auth\__init__.py", line 27, in _get_backends
+    backend = load_backend(backend_path)
+  File "D:\Python3.8\lib\site-packages\django\contrib\auth\__init__.py", line 21, in load_backend
+    return import_string(path)()
+  File "D:\Python3.8\lib\site-packages\django\utils\module_loading.py", line 24, in import_string
+    ) from err
+ImportError: Module "fuguangapi.utils.authenticate" does not define a "CustomAuthBackend" attribute/class
+ERROR 2022-06-02 18:32:02,388 basehttp:161 "POST /users/login HTTP/1.1" 500 136526
+INFO 2022-06-02 18:32:09,842 autoreload:637 Watching for file changes with StatReloader
+ERROR 2022-06-02 18:32:23,536 log:230 Internal Server Error: /users/login
+Traceback (most recent call last):
+  File "D:\Python3.8\lib\site-packages\django\utils\module_loading.py", line 20, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'fuguangapi.utils.authenticate' has no attribute 'CustomAuthBackend'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Python3.8\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python3.8\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python3.8\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\Python3.8\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python3.8\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Python3.8\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Python3.8\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Python3.8\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\apps\users\views.py", line 9, in post
+    return super().post(request, *args, **kwargs)
+  File "D:\Python3.8\lib\site-packages\rest_framework_jwt\views.py", line 57, in post
+    if serializer.is_valid():
+  File "D:\Python3.8\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "D:\Python3.8\lib\site-packages\rest_framework\serializers.py", line 429, in run_validation
+    value = self.validate(value)
+  File "D:\Python3.8\lib\site-packages\rest_framework_jwt\serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "D:\Python3.8\lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "D:\Python3.8\lib\site-packages\django\contrib\auth\__init__.py", line 68, in authenticate
+    for backend, backend_path in _get_backends(return_tuples=True):
+  File "D:\Python3.8\lib\site-packages\django\contrib\auth\__init__.py", line 27, in _get_backends
+    backend = load_backend(backend_path)
+  File "D:\Python3.8\lib\site-packages\django\contrib\auth\__init__.py", line 21, in load_backend
+    return import_string(path)()
+  File "D:\Python3.8\lib\site-packages\django\utils\module_loading.py", line 24, in import_string
+    ) from err
+ImportError: Module "fuguangapi.utils.authenticate" does not define a "CustomAuthBackend" attribute/class
+ERROR 2022-06-02 18:32:23,538 basehttp:161 "POST /users/login HTTP/1.1" 500 136526
+INFO 2022-06-02 18:37:41,337 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\utils\authenticate.py changed, reloading.
+INFO 2022-06-02 18:37:42,114 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 18:37:49,797 autoreload:637 Watching for file changes with StatReloader
+WARNING 2022-06-02 18:37:52,092 log:230 Bad Request: /users/login
+WARNING 2022-06-02 18:37:52,092 basehttp:161 "POST /users/login HTTP/1.1" 400 68
+WARNING 2022-06-02 18:57:52,892 log:230 Bad Request: /users/login
+WARNING 2022-06-02 18:57:52,892 basehttp:161 "POST /users/login HTTP/1.1" 400 40
+WARNING 2022-06-02 18:57:54,941 log:230 Bad Request: /users/login
+WARNING 2022-06-02 18:57:54,941 basehttp:161 "POST /users/login HTTP/1.1" 400 40
+INFO 2022-06-02 18:58:31,599 autoreload:637 Watching for file changes with StatReloader
+WARNING 2022-06-02 18:58:42,327 log:230 Bad Request: /users/login
+WARNING 2022-06-02 18:58:42,328 basehttp:161 "POST /users/login HTTP/1.1" 400 68
+WARNING 2022-06-02 18:58:44,621 log:230 Bad Request: /users/login
+WARNING 2022-06-02 18:58:44,622 basehttp:161 "POST /users/login HTTP/1.1" 400 68
+WARNING 2022-06-02 18:58:52,161 log:230 Bad Request: /users/login
+WARNING 2022-06-02 18:58:52,162 basehttp:161 "POST /users/login HTTP/1.1" 400 68
+INFO 2022-06-02 18:59:02,904 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 19:00:45,781 autoreload:637 Watching for file changes with StatReloader
+WARNING 2022-06-02 19:02:17,045 log:230 Bad Request: /users/login
+WARNING 2022-06-02 19:02:17,046 basehttp:161 "POST /users/login HTTP/1.1" 400 68
+INFO 2022-06-02 19:26:03,527 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 19:26:48,581 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 19:29:10,598 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 19:29:49,827 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 19:29:52,813 basehttp:161 "POST /users/login HTTP/1.1" 200 219

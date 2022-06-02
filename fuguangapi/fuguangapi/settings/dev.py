@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "rest_framework",
     'corsheaders',
     "home",
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -211,6 +212,19 @@ LOGGING = {
 REST_FRAMEWORK = {
     # 自定义异常处理
     'EXCEPTION_HANDLER': 'fuguangapi.utils.exceptions.custom_exception_handler',
+    # 自定义认证配置
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ),
+}
+import datetime
+JWT_AUTH = {
+    # 设置jwt的有效期
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(weeks=1),  # 一周有效
+    # 自定义载荷
+    'JWT_PAYLOAD_HANDLER': 'fuguangapi.utils.authenticate.jwt_payload_handler',
 }
 
 # 设置redis缓存
@@ -251,3 +265,12 @@ CORS_ORIGIN_WHITELIST = (
     'http://www.fuguang.cn:3000',
 )
 CORS_ALLOW_CREDENTIALS = False  # 不允许ajax跨域请求时携带cookie
+
+# 设置Auth认证模块使用用户模型类
+# 值得格式必须要求是: 子应用目录.模型类名
+AUTH_USER_MODEL = 'users.User'
+
+# django自定义认证
+AUTHENTICATION_BACKENDS = [
+    'fuguangapi.utils.authenticate.CustomAuthBackend',
+]
