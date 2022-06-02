@@ -1,0 +1,95 @@
+INFO 2022-06-02 09:37:15,968 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 09:37:40,369 basehttp:161 "GET / HTTP/1.1" 200 10697
+INFO 2022-06-02 09:37:40,388 basehttp:161 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2022-06-02 09:37:40,523 basehttp:161 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2022-06-02 09:37:40,523 basehttp:161 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2022-06-02 09:37:40,523 basehttp:161 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2022-06-02 10:49:30,625 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 10:49:39,132 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
+INFO 2022-06-02 10:49:39,772 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 10:52:21,858 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
+INFO 2022-06-02 10:52:22,543 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 10:58:02,376 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\urls.py changed, reloading.
+INFO 2022-06-02 10:58:02,970 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 10:58:17,660 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\urls.py changed, reloading.
+INFO 2022-06-02 10:58:18,203 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 11:03:36,331 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\apps\home\views.py changed, reloading.
+INFO 2022-06-02 11:03:36,956 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 11:04:25,830 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\apps\home\urls.py changed, reloading.
+INFO 2022-06-02 11:04:26,451 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 11:04:33,840 basehttp:161 "GET /test HTTP/1.1" 200 5155
+INFO 2022-06-02 11:04:33,874 basehttp:161 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2022-06-02 11:04:33,874 basehttp:161 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2022-06-02 11:04:33,875 basehttp:161 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2022-06-02 11:04:33,877 basehttp:161 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2022-06-02 11:04:33,881 basehttp:161 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2022-06-02 11:04:33,881 basehttp:161 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2022-06-02 11:04:33,882 basehttp:161 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2022-06-02 11:04:33,882 basehttp:161 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2022-06-02 11:04:33,883 basehttp:161 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2022-06-02 11:04:33,883 basehttp:161 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2022-06-02 11:04:33,899 basehttp:161 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2022-06-02 11:11:46,789 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 11:39:14,796 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 11:39:20,578 basehttp:161 "GET /test HTTP/1.1" 200 5115
+INFO 2022-06-02 11:39:20,591 basehttp:161 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2022-06-02 11:39:20,593 basehttp:161 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2022-06-02 11:39:20,595 basehttp:161 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2022-06-02 11:39:20,595 basehttp:161 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2022-06-02 11:39:20,595 basehttp:161 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2022-06-02 11:39:20,598 basehttp:161 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2022-06-02 11:39:20,598 basehttp:161 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2022-06-02 11:39:20,599 basehttp:161 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2022-06-02 11:39:20,599 basehttp:161 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2022-06-02 11:39:20,600 basehttp:161 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2022-06-02 11:39:20,602 basehttp:161 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2022-06-02 11:39:21,710 basehttp:161 "GET /test HTTP/1.1" 200 5115
+INFO 2022-06-02 11:39:22,610 basehttp:161 "GET /test HTTP/1.1" 200 5115
+INFO 2022-06-02 11:39:23,159 basehttp:161 "GET /test HTTP/1.1" 200 5115
+INFO 2022-06-02 11:46:28,078 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
+INFO 2022-06-02 11:46:28,777 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 11:48:09,767 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
+INFO 2022-06-02 11:51:37,449 autoreload:637 Watching for file changes with StatReloader
+ERROR 2022-06-02 11:51:44,035 exception:101 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2022-06-02 11:51:44,072 log:230 Bad Request: /test
+WARNING 2022-06-02 11:51:44,072 basehttp:161 "GET /test HTTP/1.1" 400 72958
+ERROR 2022-06-02 11:51:45,717 exception:101 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2022-06-02 11:51:45,741 log:230 Bad Request: /test
+WARNING 2022-06-02 11:51:45,741 basehttp:161 "GET /test HTTP/1.1" 400 72958
+ERROR 2022-06-02 11:51:46,271 exception:101 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2022-06-02 11:51:46,293 log:230 Bad Request: /test
+WARNING 2022-06-02 11:51:46,294 basehttp:161 "GET /test HTTP/1.1" 400 72958
+ERROR 2022-06-02 11:52:06,774 exception:101 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2022-06-02 11:52:06,796 log:230 Bad Request: /test
+WARNING 2022-06-02 11:52:06,796 basehttp:161 "GET /test HTTP/1.1" 400 72958
+ERROR 2022-06-02 11:52:07,570 exception:101 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2022-06-02 11:52:07,595 log:230 Bad Request: /test
+WARNING 2022-06-02 11:52:07,595 basehttp:161 "GET /test HTTP/1.1" 400 72958
+ERROR 2022-06-02 11:52:08,154 exception:101 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2022-06-02 11:52:08,181 log:230 Bad Request: /test
+WARNING 2022-06-02 11:52:08,181 basehttp:161 "GET /test HTTP/1.1" 400 72958
+ERROR 2022-06-02 11:52:08,692 exception:101 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2022-06-02 11:52:08,715 log:230 Bad Request: /test
+WARNING 2022-06-02 11:52:08,715 basehttp:161 "GET /test HTTP/1.1" 400 72958
+INFO 2022-06-02 11:52:17,868 autoreload:637 Watching for file changes with StatReloader
+ERROR 2022-06-02 11:52:19,290 exception:101 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2022-06-02 11:52:19,322 log:230 Bad Request: /test
+WARNING 2022-06-02 11:52:19,323 basehttp:161 "GET /test HTTP/1.1" 400 72958
+ERROR 2022-06-02 11:52:20,079 exception:101 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2022-06-02 11:52:20,103 log:230 Bad Request: /test
+WARNING 2022-06-02 11:52:20,103 basehttp:161 "GET /test HTTP/1.1" 400 72958
+ERROR 2022-06-02 11:53:42,701 exception:101 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2022-06-02 11:53:42,725 log:230 Bad Request: /test
+WARNING 2022-06-02 11:53:42,725 basehttp:161 "GET /test HTTP/1.1" 400 72821
+INFO 2022-06-02 11:53:54,575 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 11:53:55,836 basehttp:161 "GET /test HTTP/1.1" 200 5115
+INFO 2022-06-02 11:54:24,059 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
+INFO 2022-06-02 11:54:24,662 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 11:54:58,112 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
+INFO 2022-06-02 11:54:58,739 autoreload:637 Watching for file changes with StatReloader
+ERROR 2022-06-02 11:55:07,029 exception:101 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2022-06-02 11:55:07,057 log:230 Bad Request: /test
+WARNING 2022-06-02 11:55:07,058 basehttp:161 "GET /test HTTP/1.1" 400 72958
+INFO 2022-06-02 11:56:28,462 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
+INFO 2022-06-02 11:56:29,099 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-02 11:56:38,608 basehttp:161 "GET /test HTTP/1.1" 200 5115

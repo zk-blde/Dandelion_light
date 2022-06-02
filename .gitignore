@@ -1,4 +1,6 @@
-.idea/
-.vscode
-work_test
-testdata
+./idea
+./idea/*
+./.git
+./fuguangapi/db.sqlite3
+./fuguangapi/logs
+./fuguangapi/logs/*

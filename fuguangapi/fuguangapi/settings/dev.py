@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent  # 主路径
 
 
 # Quick-start development settings - unsuitable for production
@@ -27,7 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+# 设置子应用目录为系统导包路径
+# sys.path
+import sys
+sys.path.insert(0, str(BASE_DIR / "apps"))
+# print(sys.path)
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "rest_framework",
+    "home",
 ]
 
 MIDDLEWARE = [
@@ -74,9 +80,26 @@ WSGI_APPLICATION = 'fuguangapi.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'fuguang',
+        'USER': 'root',
+        'PASSWORD': '123',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'OPTIONS': {
+            'charset': 'utf8mb4', # 连接选项配置,mysql8.0以上无需配置
+        },
+        'POOL': {                # 更多的配置请参考DBUtils的配置
+           'minsize': 20,        # 初始化时，连接池中至少创建的空闲的链接，0表示不创建，不填默认为5
+           'maxsize': 200,       # 连接池中最多闲置的链接，0不限制，不填默认为0
+           'maxconnections': 0,  # 连接池允许的最大连接数，0表示不限制连接数, 默认为0
+           'blocking': True,     # 连接池中如果没有可用连接后，是否阻塞等待。True:等待；False:不等待然后报错, 默认False
+        }
     }
 }
 
@@ -123,3 +146,92 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# 日志配置
+LOGGING = {
+    'version': 1,
+    # 是否禁用已经存在的其他日志功能，肯定False
+    'disable_existing_loggers': False,
+    'formatters': { # 日志的处理格式
+        'verbose': { # 详细格式，往往用于记录日志到文件/其他第三方存储设备
+            'format': '{levelname} {asctime} {module}:{lineno:d} {message}',
+            'style': '{',
+        },
+        'simple': {  # 简单格式，往往用于终端
+            'format': '{levelname} {module}:{lineno} {message}',
+            'style': '{',
+        },
+    },
+    'filters': { # 日志的过滤设置
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+    },
+    'handlers': {  # 日志的处理方式
+        'console': {  # 终端下显示
+            'level': 'DEBUG',  # 日志的最低等级
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler', # 处理日志的核心类
+            'formatter': 'simple'
+        },
+        'file': {  # 文件中记录日志
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            # 日志位置,日志文件名,日志保存目录必须手动创建
+            'filename': BASE_DIR.parent / "logs/fuguang.log",
+            # 单个日志文件的最大值,这里我们设置300M
+            'maxBytes': 300 * 1024 * 1024,
+            # 备份日志文件的数量,设置最大日志数量为10
+            'backupCount': 10,
+            # 日志格式:详细格式
+            'formatter': 'verbose'
+        },
+    },
+    # 日志实例对象
+    'loggers': {
+        'django': { # 固定，将来django内部也会有异常的处理，只会调用django下标的日志对象
+            'handlers': ['console', 'file'],
+            'propagate': True,  # 是否让日志信息继续冒泡给其他的日志处理系统
+        },
+    }
+}
+
+# drf 异常处理
+REST_FRAMEWORK = {
+    # 自定义异常处理
+    'EXCEPTION_HANDLER': 'fuguangapi.utils.exceptions.custom_exception_handler',
+}
+
+# 设置redis缓存
+CACHES = {
+    # 默认缓存
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        # 项目上线时,需要调整这里的路径
+        "LOCATION": "redis://127.0.0.1:6379/0",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    # 提供给xadmin或者admin的session存储
+    "session": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    # 提供存储短信验证码
+    "sms_code":{
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
+# 设置xadmin用户登录时,登录信息session保存到redis
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_CACHE_ALIAS = "session"
+
+
