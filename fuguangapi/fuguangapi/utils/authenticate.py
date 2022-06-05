@@ -40,14 +40,14 @@ def get_user_by_account(account):
     else:
         return user
 
-class CustomAuthBackend(BaseBackend):
+from django.contrib.auth.backends import ModelBackend,UserModel
+class CustomAuthBackend(ModelBackend):
     """
     自定义用户认证类
     """
-
     def authenticate(self, request, username=None, password=None, **kwargs):
         user = get_user_by_account(username)
-        if user is not None and user.check_password(password) and (user.is_active or user.is_active is None):
+        if user is not None and user.check_password(password) and self.user_can_authenticate(user):
             return user
 
 

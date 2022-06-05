@@ -638,3 +638,28 @@ INFO 2022-06-02 19:26:48,581 autoreload:637 Watching for file changes with StatR
 INFO 2022-06-02 19:29:10,598 autoreload:637 Watching for file changes with StatReloader
 INFO 2022-06-02 19:29:49,827 autoreload:637 Watching for file changes with StatReloader
 INFO 2022-06-02 19:29:52,813 basehttp:161 "POST /users/login HTTP/1.1" 200 219
+INFO 2022-06-05 20:17:09,905 autoreload:637 Watching for file changes with StatReloader
+WARNING 2022-06-05 20:17:23,422 log:230 Not Found: /courses/diretion
+WARNING 2022-06-05 20:17:23,422 basehttp:161 "GET /courses/diretion HTTP/1.1" 404 2828
+INFO 2022-06-05 20:18:15,445 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-05 20:19:13,082 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-05 20:20:31,954 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\apps\courses\apps.py changed, reloading.
+INFO 2022-06-05 20:20:32,537 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-05 20:20:57,593 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-05 20:21:14,184 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
+INFO 2022-06-05 20:21:14,880 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-05 20:21:31,001 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-05 20:28:01,367 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
+INFO 2022-06-05 20:28:02,035 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-05 20:30:12,348 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
+INFO 2022-06-05 20:30:13,087 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-05 20:31:06,383 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\urls.py changed, reloading.
+INFO 2022-06-05 20:31:06,948 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-05 20:31:21,818 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\apps\courses\models.py changed, reloading.
+INFO 2022-06-05 20:31:22,400 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-05 20:32:44,875 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\utils\authenticate.py changed, reloading.
+INFO 2022-06-05 20:32:45,570 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-05 20:34:31,848 autoreload:251 C:\Users\blde\Desktop\Dandelion_light\fuguangapi\fuguangapi\settings\dev.py changed, reloading.
+INFO 2022-06-05 20:34:32,437 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-05 20:36:42,570 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-05 20:36:54,853 basehttp:161 "GET /courses/diretion HTTP/1.1" 200 409

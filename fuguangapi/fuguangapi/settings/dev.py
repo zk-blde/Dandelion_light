@@ -42,9 +42,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "rest_framework",
-    'corsheaders',
-    "home",
+    'corsheaders',  # 跨域拓展
+
+    
+
+    'home',
     'users',
+    'courses',
 ]
 
 MIDDLEWARE = [
