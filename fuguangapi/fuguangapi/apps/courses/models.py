@@ -40,6 +40,9 @@ class Course(BaseModel):
     course_cover = models.ImageField(upload_to="course/cover", max_length=255, verbose_name="封面图片", blank=True, null=True)
     course_video = models.FileField(upload_to="course/video", max_length=255, verbose_name="封面视频", blank=True, null=True)
     course_type = models.SmallIntegerField(choices=course_type,default=0, verbose_name="付费类型")
+    # choices提供了一个get_字段_display用于获取选项对应的文本
+    # course.level获取的是字段值，
+    # course.get_level_display 获取的是字段值在选项中对应的文本
     level = models.SmallIntegerField(choices=level_choices, default=1, verbose_name="难度等级")
     description = models.TextField(null=True, blank=True, verbose_name="详情介绍")
     pub_date = models.DateField(auto_now_add=True, verbose_name="发布日期")
@@ -62,6 +65,13 @@ class Course(BaseModel):
         verbose_name_plural = verbose_name
     def __str__(self):
         return "%s" % self.name
+    def discount(self):
+        # todo 通过计算获取折扣优惠相关的信息
+        return {
+            "type": "限时优惠",
+            "expire": 636050,
+            "price": 1488.00,
+        }
 class Teacher(BaseModel):
     role_choices = (
         (0, '讲师'),
