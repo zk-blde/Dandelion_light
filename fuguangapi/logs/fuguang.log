@@ -663,3 +663,14 @@ INFO 2022-06-05 20:34:31,848 autoreload:251 C:\Users\blde\Desktop\Dandelion_ligh
 INFO 2022-06-05 20:34:32,437 autoreload:637 Watching for file changes with StatReloader
 INFO 2022-06-05 20:36:42,570 autoreload:637 Watching for file changes with StatReloader
 INFO 2022-06-05 20:36:54,853 basehttp:161 "GET /courses/diretion HTTP/1.1" 200 409
+INFO 2022-06-05 21:05:19,718 autoreload:637 Watching for file changes with StatReloader
+ERROR 2022-06-05 21:06:08,542 exceptions:21 数据库操作异常！[<courses.views.CourseCategoryListAPIView object at 0x000001D026DC2A58>] (2013, 'Lost connection to MySQL server during query ([WinError 10054] 远程主机强迫关闭了一个现有的连接。)')
+ERROR 2022-06-05 21:06:08,543 log:230 Insufficient Storage: /courses/category
+ERROR 2022-06-05 21:06:08,543 basehttp:161 "GET /courses/category HTTP/1.1" 507 34
+INFO 2022-06-05 21:06:08,563 basehttp:75 - Broken pipe from ('127.0.0.1', 12361)
+
+ERROR 2022-06-05 21:06:19,172 exceptions:21 数据库操作异常！[<courses.views.CourseCategoryListAPIView object at 0x000001D026D05710>] (2013, 'Lost connection to MySQL server during query ([WinError 10054] 远程主机强迫关闭了一个现有的连接。)')
+ERROR 2022-06-05 21:06:19,172 log:230 Insufficient Storage: /courses/category
+ERROR 2022-06-05 21:06:19,172 basehttp:161 "GET /courses/category HTTP/1.1" 507 34
+INFO 2022-06-05 21:07:58,942 autoreload:637 Watching for file changes with StatReloader
+INFO 2022-06-05 21:08:02,742 basehttp:161 "GET /courses/category HTTP/1.1" 200 1942
